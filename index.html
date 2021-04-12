@@ -11,9 +11,11 @@
     <link href="./style.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-   <header>
-    <h1>Imagine Realty</h1>
-    <p>Welcome Home</p>
+   <header class="pb-5 mb-4 bg-light rounded-3">
+     <div class="container-fluid py-3">
+      <h1 class="display-5 fw-bold">Imagine Realty</h1>
+      <p class="col-md-8 fs-4">Welcome Home</p>
+    </div>
    </header> 
 
    <nav>
@@ -29,46 +31,52 @@
     <div id="separator"></div>
     <article>
         <h2>Featured Homes</h2>
-        <div class="container mx-auto">
-          <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-indicators">
-              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-            </div>
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="./images/feature1.png" class="d-block w-100" alt="...">
-                <div class="carousel-caption d-none d-md-block bg-secondary text-white">
-                  <h5>Lake House</h5>
-                  <p>Listing Price: $379,000</p>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <img src="./images/feature2.png" class="d-block w-100" alt="...">
-                <div class="carousel-caption d-none d-md-block bg-secondary text-white">
-                  <h5>Classic Cottage</h5>
-                  <p>Listing Price: $295,000</p>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <img src="./images/feature3.png" class="d-block w-100" alt="...">
-                <div class="carousel-caption d-none d-md-block bg-secondary text-white">
-                  <h5>Downtown Lofts</h5>
-                  <p>Starting at $400,000</p>
-                </div>
+        <!-- house cards -->
+        <div class="container w-75">
+        <div class="row">
+          <div class="col-sm-6">
+            <div class="card">
+              <img src="./images/feature1.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Lakeside Retreat</h5>
+                <p class="card-text">List Price: $350,000</p>
+                <a href="#" class="btn btn-primary">See More</a>
               </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
+          </div>
+          <div class="col-sm-6">
+            <div class="card">
+              <img src="./images/feature2.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Cozy Cottage</h5>
+                <p class="card-text">List Price: $295,000</p>
+                <a href="#" class="btn btn-primary">See More</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="card">
+              <img src="./images/feature3.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Downtown Lofts</h5>
+                <p class="card-text">Starting at $450,000</p>
+                <a href="#" class="btn btn-primary">See More</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="card">
+              <img src="./images/feature4.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Investor Opportunity</h5>
+                <p class="card-text">List Price: $105,000</p>
+                <a href="#" class="btn btn-primary">See More</a>
+              </div>
+            </div>
           </div>
         </div>
+      </div>
+        <!-- /house cards -->
         <p class="mt-4">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
         quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse 
         cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
